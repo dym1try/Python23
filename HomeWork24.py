@@ -20,9 +20,7 @@ list = [int(input()) for i in range(n)]# ввод значений списка
 
 print("Список по отдельным кустам", list)# вывод списка
 
-#list_res = list(range(len(list)))
-
-list_res = [i for i in range(len(list))]
+list_res = [i for i in range(len(list))]# создаем новый список той же длины
 
 for i in range(1, len(list) - 1):# середина диапазона
     list_res[i] = list[i] + list[i-1] + list[i+1]
